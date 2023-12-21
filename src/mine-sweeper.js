@@ -38,7 +38,8 @@ function minesweeper(matrix) {
         for( x = -1; x <= 1; x++) {
           for (y = -1; y <=1; y++) {
             if(matrix[i+x] !== undefined) {
-              if(matrix[i+x][j+y] !== undefined && matrix[i+x][j+y]  && matrix[i][j] != matrix[i+x][j+y] ) {
+             
+              if(matrix[i+x][j+y]) {
                 cell ++;
                 } 
             }  
